@@ -37,7 +37,7 @@ always_comb
     
     always @(posedge clk)
     if (!nReset) begin
-        out   <= {out1[7:0],out1[15:8]};
+        out   <= {out1[7:0],out1[15:8]}; //a_in = out1 7 downto 0; //b_in = out1 15 downto 8;
         count <= 0;
     end 
     else begin
