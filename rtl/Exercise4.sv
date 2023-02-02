@@ -26,10 +26,10 @@ module Exercise4 (
       {0, 2'bzz} : begin
         out = 0;
       end
-      {1, 2'bz0} : begin
+      {1, 2'b00} : begin
         out = alpha;
       end
-      {1, 2'bz1} : begin
+      {1, 2'b01} : begin
         out = beta;
       end
       {1, 2'b10} : begin
