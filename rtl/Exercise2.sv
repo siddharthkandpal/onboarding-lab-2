@@ -15,7 +15,7 @@ module Exercise2 (
   reg XORD_BITS;
 
   always @(posedge) begin
-    if (nReset) 
+    if (!nReset) 
       out <= init;
     else
     XORD_BITS <= ((init[1] ^ init[3] ^ init[4] ^ init[6]) & 1);
