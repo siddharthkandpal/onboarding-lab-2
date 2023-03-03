@@ -23,19 +23,19 @@ module Exercise4 (
   
   always @(*) begin
     casez({cs,sel[1:0]}) 
-      {0, 2'bzz} : begin
+      {1'b0, 2'bzz} : begin
         out = 0;
       end
-      {1, 2'b00} : begin
+      {1'b1, 2'b00} : begin
         out = alpha;
       end
-      {1, 2'b01} : begin
+      {1'b1, 2'b01} : begin
         out = beta;
       end
-      {1, 2'b10} : begin
+      {1'b1, 2'b10} : begin
         out = gamma;
       end
-      {1, 2'b11} : begin
+      {1'b1, 2'b11} : begin
         out = 0;
       end
     endcase
