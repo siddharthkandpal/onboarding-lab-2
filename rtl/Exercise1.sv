@@ -10,7 +10,7 @@ module Exercise1 (
     input  [1:0] op,
     input  [7:0] a,
     input  [7:0] b,
-    output [7:0] out
+    output logic [7:0] out
 );
 
   always @(*) begin
